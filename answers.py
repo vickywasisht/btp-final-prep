@@ -13,7 +13,7 @@ class BST:
 	This function prints every value in the tree that is between min and max inclusive. 
 	Function only visits a subtree where the values may be valid.
 	'''
-	def print_between(self, node, min, max): 
+	def print_between(self, min, max): 
 		def _print_between(node, min, max):
 			if node is None:
 				return
@@ -22,8 +22,7 @@ class BST:
 				if node.value >= min and node <= max:
 					print(str(node) + ", ")
 				self.print_between(node.right, min, max)
-		
-		_print_between(node, min, max)
+		_print_between(self.root, min, max)
 
 	# This function returns the height of the binary tree.
 	def height(self):
