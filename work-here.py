@@ -1,3 +1,4 @@
+# Binary Search Tree (BST) class with methods to implement
 class BST:
 	class Node:
 		def __init__(self, value=None, left=None, right=None):
